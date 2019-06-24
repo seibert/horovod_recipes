@@ -1,0 +1,8 @@
+# metapackage to establish priority order for horovod packages
+package:
+  name: _horovod_select
+  version: {{ horovod_variant_version }}
+
+build:
+  number: 0
+  string: {{ horovod_variant_str }}

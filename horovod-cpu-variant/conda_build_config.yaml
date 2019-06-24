@@ -1,0 +1,22 @@
+# configuration for linux-64 cpu
+full_base_version:
+  - "1.13.1 cpu_py27h7ce6ba3_0"
+  - "1.13.1 cpu_py36h7ce6ba3_0"
+  - "1.13.1 cpu_py37h7ce6ba3_0"
+select_version:
+  - "1.2.0 cpu"
+  - "1.2.0 cpu"
+  - "1.2.0 cpu"
+horovod_variant:
+  - "cpu"
+  - "cpu"
+  - "cpu"
+py_version:
+  - 2.7
+  - 3.6
+  - 3.7
+zip_keys:
+  - full_base_version
+  - select_version
+  - horovod_variant
+  - py_version

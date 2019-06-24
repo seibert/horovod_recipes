@@ -1,0 +1,9 @@
+variant:
+  - "gpu"
+  - "cpu"
+select_version:
+  - "1.1.0 gpu"
+  - "1.2.0 cpu"
+zip_keys:
+  - variant
+  - select_version

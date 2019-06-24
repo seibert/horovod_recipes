@@ -1,0 +1,22 @@
+{% set version = "0.16.3" %}
+
+package:
+  name: horovod-{{ variant }}
+  version: {{ version }}
+
+build:
+  number: 0
+
+requirements:
+  run:
+    - horovod =={{ version }}
+    - _horovod_select =={{ select_version }}
+
+test:
+  imports:
+    - horovod
+  commands:
+    - horovodrun --help
+
+about:
+  summary: Metapackage for selecting a Horovod variant.

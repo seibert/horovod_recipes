@@ -1,0 +1,27 @@
+# configuration for linux-64 gpu, cuda 9.0
+full_base_version:
+  - "1.13.1 gpu_py27hf4a566f_0"
+  - "1.13.1 gpu_py36hf4a566f_0"
+  - "1.13.1 gpu_py37hf4a566f_0"
+select_version:
+  - "1.1.0 gpu"
+  - "1.1.0 gpu"
+  - "1.1.0 gpu"
+horovod_variant:
+  - "gpu"
+  - "gpu"
+  - "gpu"
+cudatoolkit:
+  - 9.0
+  - 9.0
+  - 9.0
+py_version:
+  - 2.7
+  - 3.6
+  - 3.7
+zip_keys:
+  - full_base_version
+  - select_version
+  - horovod_variant
+  - cudatoolkit
+  - py_version
